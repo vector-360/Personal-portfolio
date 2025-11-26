@@ -77,3 +77,9 @@ window.addEventListener("resize", () => {
     canvas.height = window.innerHeight;
     init();
 });
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
